@@ -125,7 +125,7 @@ EDGE            | 1: canny, 2: DoG, 3: XDoG, 4: external
 CORRECT         | 0: no gamma correction, 1: gamma correction
 
 # デモアプリ
-デモアプリはhttps://github.com/Kohey1480/inpaint-appの一部を変更して使用しています。
+[デモアプリ](https://github.com/Kohey1480/inpaint-app)の一部を変更して使用しています。
 画像は、256*256にリサイズしてから入力してください。
 ```
 pip install flask
