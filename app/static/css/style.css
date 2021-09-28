@@ -1,0 +1,167 @@
+.heightCentering_child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform : translate(-50%,-50%);
+  transform : translate(-50%,-50%);
+  width: 100%;
+  text-align: center;/*一応BOX内の文字も中央寄せ*/
+}
+
+
+#content-before{
+  width: 100%;
+  margin-right:auto; margin-left:auto;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#select-ckpt {
+  margin-bottom: 10px;
+  border: 1px solid dodgerblue;
+  font-weight: bold;
+  font-size: x-large;
+  color: dodgerblue;
+  width: 256px;
+}
+
+#select-dataset {
+  margin-bottom: 10px;
+  border: 1px solid dodgerblue;
+  font-weight: bold;
+  font-size: x-large;
+  color: dodgerblue;
+  width: 256px;
+}
+
+#label {
+  font-size:x-large;
+  font-weight: bold;
+  color: dodgerblue;
+}
+
+#label-value {
+  font-size: x-large;
+  font-weight: bold;
+  color: dodgerblue;
+}
+
+#uploader{
+  width: 512px;
+  height:512px;
+  text-align: center;
+  margin-top: auto;
+}
+
+.uploadDropzone {
+  border:1px dashed #aaa;
+  /* padding:40px; */
+  text-align: center;
+  height:512px;
+  width: 512px;
+}
+
+.uploadDropzone .cloud {
+  font-size: 48px;
+  line-height: 1;
+  opacity: .5;
+}
+
+#cont {
+  position: relative;
+  /*position: center;*/
+  width: 512px;
+  height: 512px;
+  margin: auto;
+}
+
+canvas {
+  border: 1px solid dodgerblue;
+  /* margin-top: 20px;
+  margin-bottom: 20px; */
+}
+
+
+canvas, .canvas-container {
+  position: absolute!important;
+  left: 0!important;
+  top: 0!important;
+  width: 100%!important;
+  height: 100%!important;
+}
+
+#loading {
+  width: 512px;
+  height: 512px;
+  transition: all 1s;
+  background-color: #000;
+  z-index: 100;
+  opacity:0.7;
+  display: none;
+}
+
+#loading div{
+  margin: auto;
+  color: #d1eeff;
+  z-index: 200;
+}
+
+#canvasButton{
+  width:512px;
+  display: inline-block;
+}
+
+#canvasButton #changeImg{
+  margin:10px auto;
+  font-size: x-large;
+  font-weight: bold;
+  color: dodgerblue;
+  float: left;
+}
+
+/* #canvasButton #paint{
+  float:right;
+} */
+#canvasButton #sendImg{
+  margin:10px auto;
+  display:none;
+  font-size: x-large;
+  font-weight: bold;
+  color: dodgerblue;
+  float:right;
+}
+
+#canvasButton #ClearMask {
+  margin:10px auto;
+  font-size: x-large;
+  font-weight: bold;
+  color: dodgerblue;
+  float: center;
+}
+
+#canvasDescription{
+  margin:5px auto;
+  /*display: inline-block;*/
+}
+
+#canvasRellod{
+  width: 128px;
+  display: inline-block;
+  font-size: x-large;
+  font-weight: bold;
+  /* color: dodgerblue; */
+}
+
+label:hover{
+  cursor: pointer!important;
+}
+
+
+
+
+
+
+
+
+
+

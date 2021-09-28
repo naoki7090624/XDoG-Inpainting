@@ -1,0 +1,96 @@
+<!-- Inherit the parent template -->
+{%- extends "layout.html" %} 
+{%- block content %}
+    <header style="height:30px">
+    </header>
+
+    <div id="content-before">
+        <div class="row" style="text-align: center">
+            <div class="col-sm-3" ></div>
+            <div class="col-sm-2" >
+                <select id="select-ckpt">
+                    <option value="Canny">Canny</option>
+                    <option value="DoG">DoG</option>
+                    <option value="XDoG">XDoG</option>
+                </select>
+            </div>
+            <div class="col-sm-2" >
+                <select id="select-dataset">
+                    <option value="CelebA">CelebA</option>
+                    <option value="CelebA-HQ">CelebA-HQ</option>
+                    <option value="Paris">Paris</option>
+                </select>
+            </div>
+            <div class="col-sm-3">
+                <label id="label">Brush Size</label>
+                <input type="range" id="BrushSize" value="10" min="1" max="30" step="1">
+                <label class="value" id="label-value">10</label>
+            </div>
+            <div class="col-sm-2" ></div>
+            <!-- <div class="col-sm-2" >
+                <input type="button" value="Clear mask" id="ClearMask" class="btn btn-outline-primary">
+            </div>
+            <div class="col-sm-2" >
+                <input type="button" value="Change Image" id="changeImg" class="btn btn-outline-primary">
+            </div> -->
+        </div>
+        
+
+        <label class="pointer" for="inImg" style="text-align: center;">
+
+            <div id="uploader">
+                    <div class="uploadDropzone">
+                        <div class="heightCentering_child">
+                            <i class="fa material-icons cloud">cloud_upload</i>
+                            <h5>Upload your image</h5>
+                        </div>
+                    </div>
+            </div>
+
+            <input type="file" id="inImg" accept="image/*" style="display:none;">
+        </label>
+        <div class="canvas" style="display: none;">
+            <div id="cont">
+                <canvas id="cnvs_img" width="256px" height="256px"></canvas>
+                <canvas id="cnvs_mask" width="256px" height="256px"></canvas>
+                <div id="loading" style="display: none;">
+                        <div class="heightCentering_child">
+                            <i class="fa fa-spinner fa-pulse fa-5x fa-fw waiting"></i>
+                            <p>Please Wait...</p>
+                        </div>
+                </div>
+            </div>
+
+            <div id="canvasButton">
+                <input type="button" value="Change Image" id="changeImg" class="btn btn-outline-primary">
+                <input type="button" value="Clear mask" id="ClearMask" class="btn btn-outline-primary">
+                <button id="sendImg" class="drawingmode btn btn-outline-primary">Inpainting</button>
+            </div>
+            <div id = "canvasDescription">
+                <h6 class="drawingmode">Draw your mask</h6>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="content-after" style="display: none; text-align: center">
+          <div class="row">
+            <!-- <div class="col-sm-1" ></div> -->
+            <div class="col-sm-4">
+                <img src="#" id="content-img" alt="" width="512px">
+                <h3>Input image</h3>
+            </div>
+            <div class="col-sm-4">
+                <img src="#" id="content-edge" alt="" width="512px">
+                <h3>Inpainted edge</h3>
+            </div>
+            <div class="col-sm-4">
+                <img src="#" id="content-result" alt="" width="512px">
+                <h3>Final image</h3>
+            </div>
+            <!-- <div class="col-sm-1" ></div> -->
+          </div>
+        <button onclick="location.reload();" class="drawingmode btn btn-primary" id="canvasRellod">Rellod</button>
+    </div>
+{%- endblock %}

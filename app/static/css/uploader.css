@@ -1,0 +1,114 @@
+
+
+.uploadDropzone {
+  border:1px dashed #aaa;
+  padding:40px;
+  text-align: center;
+  border-radius: 5px;
+  height:512px;
+  width: 512px;
+}
+
+.uploadDropzone .cloud {
+  font-size: 48px;
+  line-height: 1;
+  opacity: .5;
+}
+
+/* .uploadMessage {
+  margin-top:.5rem;
+}
+
+.uploadProgress {
+  margin-top:.5rem;
+  background-color: #fff;
+  border: .75px solid #aaa;
+  border-radius: 3px;
+}
+
+.uploadProgress:empty {
+  background: none; margin:0; border:0;
+}
+
+.uploadProgress .wrapper {
+  position: relative;
+  background-color: #fff;
+  white-space: nowrap;
+  border-bottom: .75px solid #d2d2d2;
+  line-height: 35px;
+  padding: 0 0 0 10px;
+}
+
+.uploadProgress .wrapper:last-child {
+  border-bottom: 0;
+}
+
+.uploadProgress .wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.uploadProgress .name {
+  display: block;
+  float: left;
+  white-space: nowrap;
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.uploadProgress .size {
+  display: block;
+  float: left;
+  white-space: nowrap;
+  color: #aaa;
+  padding-left: 5px;
+}
+
+.uploadProgress .size:before {
+  content: "(";
+}
+
+.uploadProgress .size:after {
+  content: ")";
+}
+
+.uploadProgress .progress {
+  display: block;
+  float: right;
+  width: 180px;
+  margin: 5px 10px;
+}
+
+.uploadProgress .deleteAttachment {
+  display: block;
+  float: right;
+  padding: 0;
+  background-color: transparent !important;
+  border: 0 !important;
+  background-image: none;
+  line-height:inherit;
+}
+
+.deleteAttachment:after {
+  content: '\00D7';
+  display: block;
+  line-height: inherit;
+  width: 35px;
+  text-align: center;
+  color: rgba(0, 0, 0, .3);
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.uploadProgress .wrapper.success {
+  color:green;
+}
+.uploadProgress .wrapper.error {
+  color:red;
+}
+
+.uploadProgress .error .progress { display:none; }
+.uploadProgress .success .progress { display:none; } */
